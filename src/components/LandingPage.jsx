@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import {
   FaShieldAlt,
   FaLock,
@@ -19,6 +19,7 @@ const LandingPage = () => {
     message: ''
   });
 
+  // eslint-disable-next-line no-unused-vars
   const [isNavOpen, setIsNavOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
@@ -214,6 +215,7 @@ const LandingPage = () => {
           animate="visible"
           className="relative z-10 text-center px-4">
           <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl font-bold mb-6">
+            
             Secure Your Digital Future
           </motion.h1>
           <motion.p variants={itemVariants} className="text-xl md:text-2xl mb-8">
@@ -397,7 +399,7 @@ const LandingPage = () => {
                   <FiMail className="mr-2" /> contact@pentestshield.com
                 </div>
                 <div className="flex items-center text-gray-400">
-                  <FiPhone className="mr-2" /> +60 (555) 123-4567
+                  <FiPhone className="mr-2" /> +60 11-3795 4962
                 </div>
               </div>
             </div>
