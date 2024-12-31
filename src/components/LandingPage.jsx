@@ -64,23 +64,25 @@ const LandingPage = () => {
     }
   ];
 
-  const testimonials = [
+  const team = [
     {
-      name: 'John Smith',
-      position: 'CTO, Tech Corp',
-      comment: 'Outstanding cybersecurity services that helped us protect our valuable data.',
-      image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e'
+      name: 'Professor Dr. Khalid Hussain',
+      position: 'Professor of Cybersecurity',
+      image: 'https://aiu.edu.my/wp-content/uploads/2022/12/Professor-Dr.-Hussain-Khalid-01-200x200.jpg'
     },
     {
-      name: 'Sarah Johnson',
-      position: 'CEO, Digital Solutions',
-      comment: 'Their expertise in threat detection is unmatched. Highly recommended!',
-      image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80'
+      name: 'Md Amin Ullah Sheikh',
+      position: 'Penetration Tester',
+      image: 'https://avatars.githubusercontent.com/u/128347342'
     },
     {
       name: 'Mike Anderson',
       position: 'CISO, SecureNet',
-      comment: 'Professional team with exceptional knowledge in cybersecurity.',
+      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
+    },
+    {
+      name: 'Mike Anderson',
+      position: 'CISO, SecureNet',
       image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
     }
   ];
@@ -97,7 +99,7 @@ const LandingPage = () => {
     });
   };
 
-  const navItems = ['Home', 'Services', 'Testimonials', 'Contact'];
+  const navItems = ['Home', 'Services', 'Team', 'Contact'];
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -253,25 +255,24 @@ const LandingPage = () => {
         </div>
       </div>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50" id="testimonials">
+      {/* Team Section */}
+      <section className="py-20 bg-gray-50" id="team">
         <div className="container mx-auto px-6">
-          <h2 className="text-3xl font-bold text-center mb-12">Client Testimonials</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
+          <h2 className="text-3xl font-bold text-center mb-12">Our Team</h2>
+          <div className="grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2  gap-8 ">
+            {team.map((member, index) => (
               <div key={index} className="bg-white p-6 rounded-lg shadow-lg">
-                <div className="flex items-center mb-4">
+                <div className="flex flex-col justify-center items-center mb-4">
                   <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full mr-4"
+                    src={member.image}
+                    alt={member.name}
+                    className="w-48 h-48 rounded-full shadow-sm shadow-gray-500"
                   />
                   <div>
-                    <h3 className="font-semibold">{testimonial.name}</h3>
-                    <p className="text-gray-600 text-sm">{testimonial.position}</p>
+                    <h3 className="text-center font-semibold">{member.name}</h3>
+                    <p className="text-center text-gray-600 text-sm">{member.position}</p>
                   </div>
                 </div>
-                <p className="text-gray-700">{testimonial.comment}</p>
               </div>
             ))}
           </div>
