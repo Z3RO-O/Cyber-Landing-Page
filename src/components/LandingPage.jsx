@@ -10,6 +10,8 @@ import {
 import { BsArrowRight } from 'react-icons/bs';
 import { FiMail, FiPhone, FiGithub, FiLinkedin, FiTwitter } from 'react-icons/fi';
 import { motion, AnimatePresence } from 'framer-motion';
+import Raghad from '../assets/images/raghad.jpeg';
+import Habiba from '../assets/images/habiba.png';
 
 const LandingPage = () => {
   const [formData, setFormData] = useState({
@@ -76,14 +78,14 @@ const LandingPage = () => {
       image: 'https://avatars.githubusercontent.com/u/128347342'
     },
     {
-      name: 'Mike Anderson',
-      position: 'CISO, SecureNet',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
+      name: 'Raghad Al Yatim',
+      position: 'Cybersecurity Specialist',
+      image: Raghad
     },
     {
-      name: 'Mike Anderson',
-      position: 'CISO, SecureNet',
-      image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e'
+      name: 'Habiba Arifa',
+      position: 'Security Analyst',
+      image: Habiba
     }
   ];
 
