@@ -36,33 +36,33 @@ const LandingPage = () => {
   const services = [
     {
       icon: <FaShieldAlt />,
-      title: 'Network Security',
-      description: 'Comprehensive protection for your network infrastructure against cyber threats.'
+      title: 'Vulnerability Assessment',
+      description: 'Comprehensive analysis of your network infrastructure to identify and mitigate vulnerabilities.'
     },
     {
       icon: <FaLock />,
-      title: 'Data Encryption',
-      description: 'Advanced encryption solutions to keep your sensitive data secure.'
+      title: 'Web Application Penetration Testing',
+      description: 'Thorough testing to uncover security flaws in web applications and prevent breaches.'
     },
     {
       icon: <FaUserShield />,
-      title: 'Threat Assessment',
-      description: 'Regular security audits and vulnerability assessments.'
+      title: 'API Penetration Testing',
+      description: 'Detailed assessment of your APIs to detect and resolve security gaps.'
     },
     {
       icon: <FaServer />,
-      title: 'Cloud Security',
-      description: 'Secure cloud infrastructure and data protection solutions.'
+      title: 'Mobile Application Penetration Testing',
+      description: 'Evaluate mobile apps for vulnerabilities and ensure robust security.'
     },
     {
       icon: <FaNetworkWired />,
-      title: 'Endpoint Protection',
-      description: 'Complete security for all your network endpoints.'
+      title: 'Database Assessment',
+      description: 'In-depth analysis to secure sensitive data and prevent unauthorized access.'
     },
     {
       icon: <FaFileAlt />,
-      title: 'Compliance Services',
-      description: 'Ensure your systems meet industry security standards.'
+      title: 'Source Code Review',
+      description: 'Review your application’s source code to detect and fix potential security issues.'
     }
   ];
 
@@ -218,9 +218,9 @@ const LandingPage = () => {
           initial="hidden"
           animate="visible"
           className="relative z-10 text-center px-4">
-          <motion.h1 variants={itemVariants} className="text-5xl md:text-6xl font-bold mb-6">
-            Secure Your Digital Future
-          </motion.h1>
+          <motion.p variants={itemVariants} className="text-2xl md:text-3xl font-bold mb-6">
+          AN ENTERPRISE BASED COMMUNITY CYBER SECURITY SOLUTIONS FOR REAL TIME (VULNERABILITIES ASSESSMENT, PENETRATION TESTING AND COUNTERMEASURES) 
+          </motion.p>
           <motion.p variants={itemVariants} className="text-xl md:text-2xl mb-8">
             Advanced Cybersecurity Solutions for Modern Businesses
           </motion.p>
@@ -283,134 +283,112 @@ const LandingPage = () => {
 
       {/* Call to Action Section */}
       <div className="py-20 bg-blue-900" id="contact">
-        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-white text-center mb-8">
-            Ready to Secure Your Business?
-          </h2>
-          <form onSubmit={handleSubmit} className="bg-white p-8 rounded-lg shadow-xl">
-            <div className="mb-6">
-              <label htmlFor="name" className="block text-gray-700 mb-2">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="email" className="block text-gray-700 mb-2">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required
-              />
-            </div>
-            <div className="mb-6">
-              <label htmlFor="message" className="block text-gray-700 mb-2">
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                rows={5}
-                className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
-                required></textarea>
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-lg font-semibold">
-              Send Message
-            </button>
-          </form>
-        </div>
-      </div>
+  <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <h2 className="text-3xl font-bold text-white text-center mb-8">
+      Ready to Secure Your Business?
+    </h2>
+
+    <p className="text-lg text-white text-center mb-8 text-justify">
+      PentestShield offers enterprise-level cybersecurity services tailored to protect
+      your organization from ever-evolving digital threats. Our expert team uses advanced
+      tools to conduct comprehensive penetration testing, vulnerability assessments, and
+      real-time threat intelligence, ensuring your business is always a step ahead of
+      cybercriminals.
+    </p>
+    <p className="text-lg text-white text-center mb-8 text-justify">
+      We collaborate with organizations of all sizes, providing customized strategies to
+      fortify your cybersecurity posture and ensure compliance with industry standards.
+    </p>
+
+    {/* White Button Around Text */}
+    <div className="text-center mb-8">
+      <a
+        href="mailto:smaminullah24@gmail.com"
+        className="inline-block px-12 py-6 bg-white text-blue-900 font-semibold text-lg rounded-full hover:bg-gray-100 transition duration-300"
+      >
+        Contact Us
+      </a>
+    </div>
+  </div>
+</div>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div>
-              <h3 className="text-xl font-bold mb-4">PentestShield</h3>
-              <p className="text-gray-400">
-                Protecting your digital assets with advanced security solutions.
-              </p>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    About Us
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Contact
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Legal</h4>
-              <ul className="space-y-2">
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Privacy Policy
-                  </a>
-                </li>
-                <li>
-                  <a href="#" className="text-gray-400 hover:text-white">
-                    Terms of Service
-                  </a>
-                </li>
-              </ul>
-            </div>
-            <div>
-              <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
-              <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <FiTwitter size={24} />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <FiLinkedin size={24} />
-                </a>
-                <a href="#" className="text-gray-400 hover:text-white">
-                  <FiGithub size={24} />
-                </a>
-              </div>
-              <div className="mt-4 space-y-2">
-                <div className="flex items-center text-gray-400">
-                  <FiMail className="mr-2" /> contact@pentestshield.com
-                </div>
-                <div className="flex items-center text-gray-400">
-                  <FiPhone className="mr-2" /> +60 11-3795 4962
-                </div>
-              </div>
-            </div>
+<footer className="bg-gray-900 text-white py-12">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div>
+        <h3 className="text-xl font-bold mb-4">PentestShield</h3>
+        <p className="text-gray-400">
+          Protecting your digital assets with advanced security solutions.
+        </p>
+      </div>
+      <div>
+        <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+        <ul className="space-y-2">
+          <li>
+            <a href="#team" className="text-gray-400 hover:text-white">
+              About Us
+            </a>
+          </li>
+          <li>
+            <a href="#services" className="text-gray-400 hover:text-white">
+              Services
+            </a>
+          </li>
+          <li>
+            <a href="mailto:smaminullah24@gmail.com" className="text-gray-400 hover:text-white">
+              Contact
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="text-lg font-semibold mb-4">Legal</h4>
+        <ul className="space-y-2">
+          {/* <li>
+            <a href="#" className="text-gray-400 hover:text-white">
+              Privacy Policy
+            </a>
+          </li> */}
+          <li>
+            <a href="http://127.0.0.1:8000/termsandcondition" className="text-gray-400 hover:text-white">
+              Terms of Service
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
+        <div className="flex space-x-4">
+          <a href="https://twitter.com/Aminullah240" className="text-gray-400 hover:text-white">
+            <FiTwitter size={24} />
+          </a>
+          <a href="https://linkedin.com/in/aminullah-sheikh" className="text-gray-400 hover:text-white">
+            <FiLinkedin size={24} />
+          </a>
+          <a href="https://github.com/cyber-aminullah" className="text-gray-400 hover:text-white">
+            <FiGithub size={24} />
+          </a>
+        </div>
+        <div className="mt-4 space-y-2">
+          <div className="flex items-center text-gray-400">
+            <FiMail className="mr-2" /> 
+            <a href="mailto:smaminullah24@gmail.com" className="hover:text-white">
+            aminullah@pentestshield.com
+            </a>
           </div>
-          <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} PentestShield. All rights reserved.</p>
+          <div className="flex items-center text-gray-400">
+            <FiPhone className="mr-2" /> +60 11-3795 4962
           </div>
         </div>
-      </footer>
+      </div>
+    </div>
+    <div className="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400">
+      <p>© {new Date().getFullYear()} PentestShield. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
     </div>
   );
 };
